@@ -10,7 +10,7 @@
 
 @font-face {
   font-family: 'Grinnell';
-  src: url('https://cdn.glitch.com/7c62af70-c1c1-4740-88f8-28b7329752a4%2FGrinnellR-Medium.otf?v=1600905208401')  format('opentype');
+  src: url('fonts/GrinnellR-Medium.otf')  format('opentype');
 }
 
 a {
