@@ -1,0 +1,212 @@
+@font-face {
+  font-family: 'Whirlybats';
+  src: url('https://cdn.glitch.com/7c62af70-c1c1-4740-88f8-28b7329752a4%2FWhirlybatsGX.ttf?v=1600878802649')  format('truetype');
+}
+
+@font-face {
+  font-family: 'Nicholson Gothic';
+  src: url('https://cdn.glitch.com/7c62af70-c1c1-4740-88f8-28b7329752a4%2FNicholsonGothic-Regular.otf?v=1600804324633')  format('opentype');
+}
+
+@font-face {
+  font-family: 'Grinnell';
+  src: url('https://cdn.glitch.com/7c62af70-c1c1-4740-88f8-28b7329752a4%2FGrinnellR-Medium.otf?v=1600905208401')  format('opentype');
+}
+
+a {
+  text-decoration: none;
+  color: var(--type)
+}
+
+.typetester:focus {
+    outline:none;
+}
+
+.typetester {
+text-align: center;
+margin: auto;
+}
+
+.grinnell {
+  font-size: 9vw;
+}
+
+@media screen and (max-width: 600px) {
+  .grinnell {
+font-size: 13.5vw;}
+}
+
+@keyframes animate {
+  0%   { font-variation-settings: "anim" 100; }
+  100% { font-variation-settings: "anim" 200; }
+}
+
+.download{
+font-variation-settings: "anim" 100;
+  transition: .3s;
+  display: none;
+}
+
+.download:hover{
+font-variation-settings: "anim" 200;
+}
+
+.dlshow {
+display: block;
+}
+
+
+:root {
+    --type: black;
+    --bg: white;
+    --color: var(--type);
+}
+
+body {
+  font-family: "Nicholson Gothic", sans-serif;
+  font-size: 20px;
+  margin: 10px;
+  text-align: center;
+  background-color: var(--bg);
+  color: var(--type);
+  -webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+}
+
+.x {
+font-family: "Whirlybats";
+    font-size: 30px;
+    cursor: pointer;
+    position: absolute;
+    right: 9px;
+    top: 5px;
+}
+
+.light {
+    --type: black;
+    --bg: white;
+    --color: var(--type);
+}
+
+.about {
+  position: fixed;
+  font-size: 50px;
+  padding: 30px;
+  background-color: var(--bg);
+  color: var(--type);
+  border: 1px solid var(--type);
+  z-index: 2;
+  left: 200px;
+  right: 200px;
+  top: 100px;
+  box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.26);
+  opacity: 0;
+  pointer-events: none;
+  transform: scale(1,0);
+  transition: .3s;
+}
+
+.aboutshow {
+  opacity: 1;
+  pointer-events: all;
+  transform: scale(1,1);
+}
+
+.type svg {
+max-width: 900px;
+}
+
+.type {
+  margin: auto;
+  margin-top: 100px;
+  margin-bottom: 100px;
+}
+
+p {
+margin: 0;
+}
+
+.desc {
+padding: 30px;
+max-width: 500px;
+  margin: auto;
+}
+
+#um {
+margin: 20px;
+}
+
+.navbar svg {
+width: 150px;
+  fill: var(--color)!important;
+}
+
+.navbar {
+  position: fixed;
+  top: 0;
+  left: 0;
+}
+
+.tr, .br, .bl {
+font-family: "Whirlybats";
+  font-size: 70px;
+position: fixed;
+      font-variation-settings: "anim" 100;
+  transition: .4s;
+  color: var(--color);user-select: none;
+}
+
+.tr {
+top: 0;
+right: 0;
+}
+
+.br {
+bottom: 0;
+right: 0;
+}
+
+.bl {
+bottom: 0;
+left: 0;
+}
+
+.tr:hover, .br:hover, .bl:hover {
+  font-variation-settings: "anim" 200;
+  cursor: pointer;
+
+}
+
+hr {
+border: 0;
+border-bottom: 1px solid var(--type);
+  margin-top: 20px;
+margin-bottom: 50px;
+}
+
+@media screen and (max-width: 600px) {
+  .navbar, .tr, .br, .bl {
+position: relative;
+    display: inline-block;
+    font-size: 30px;
+}
+   .tr, .br, .bl {
+transform: translateY(-25px)
+}
+
+
+  .about {
+  position: fixed;
+  font-size: 30px;
+  left: 20px;
+  right: 20px;
+  top: 20px;
+}
+
+  .navbar svg {
+    width: 100px;
+    fill: var(--color)!important;
+}
+
+
+}
