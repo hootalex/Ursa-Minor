@@ -4,8 +4,8 @@
 }
 
 @font-face {
-  font-family: 'Nicholson Gothic';
-  src: url('https://cdn.glitch.com/7c62af70-c1c1-4740-88f8-28b7329752a4%2FNicholsonGothic-Regular.otf?v=1600804324633')  format('opentype');
+  font-family: 'Nicholson';
+  src: url('https://cdn.glitch.com/79a216c0-5f48-407b-9d1e-af5b4d510daf%2FNicholsonGothic-Regular.otf?v=1600965303120')  format('opentype');
 }
 
 @font-face {
@@ -36,6 +36,15 @@ margin: auto;
 font-size: 13.5vw;}
 }
 
+.nicholson {
+  font-size: 9vw;
+}
+
+@media screen and (max-width: 600px) {
+  .nicholson {
+font-size: 13.5vw;}
+}
+
 @keyframes animate {
   0%   { font-variation-settings: "anim" 100; }
   100% { font-variation-settings: "anim" 200; }
@@ -63,7 +72,7 @@ display: block;
 }
 
 body {
-  font-family: "Nicholson Gothic", sans-serif;
+  font-family: "Nicholson", sans-serif;
   font-size: 20px;
   margin: 10px;
   text-align: center;
