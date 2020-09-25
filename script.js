@@ -63,3 +63,15 @@ $( ".grinnell" ).keyup(function() {
 
 
 });
+
+
+
+
+$( "#fatbear" ).on('mousemove touchmove change', function () {
+
+var slideval = $('#fatbear').val();
+
+console.log(slideval)
+
+$(".fatbear").css("font-variation-settings","'wght'" + slideval )
+});

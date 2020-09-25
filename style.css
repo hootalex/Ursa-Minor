@@ -9,6 +9,11 @@
 }
 
 @font-face {
+  font-family: 'Fat Bear';
+  src: url('fonts/fatbear.ttf')  format('truetype');
+}
+
+@font-face {
   font-family: 'Grinnell';
   src: url('fonts/GrinnellR-Medium.otf')  format('opentype');
 }
@@ -47,6 +52,11 @@ font-size: 13.5vw;}
 @media screen and (max-width: 600px) {
   .nicholson {
 font-size: 13.5vw;}
+}
+
+@media screen and (max-width: 600px) {
+  .fatbear {
+font-size: 66vw!important;}
 }
 
 @keyframes animate {
