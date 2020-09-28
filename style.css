@@ -42,6 +42,7 @@ margin: auto;
 
 #fatbear {
   max-width: 300px;
+  margin: auto!important;
 }
 
 @media screen and (max-width: 600px) {
@@ -60,7 +61,7 @@ font-size: 13.5vw;}
 
 @media screen and (max-width: 600px) {
   .fatbear {
-font-size: 66vw!important;}
+font-size: 50vw!important;}
 }
 
 @keyframes animate {
