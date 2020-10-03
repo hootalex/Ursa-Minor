@@ -73,5 +73,5 @@ var slideval = $('#fatbear').val();
 
 console.log(slideval)
 
-$(".fatbear").css("font-variation-settings","'wght'" + slideval )
+$(".fatbear").css("font-variation-settings","'anim'" + slideval )
 });
