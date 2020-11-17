@@ -1,5 +1,5 @@
-var whirlydownload = "wdl.zip"
-var batdownload = "wdl.zip"
+var whirlydownload = "wbirdie.zip"
+var batdownload = "wbats.zip"
 var bothdownload = "wbirdie-wbats.zip"
 
 
