@@ -1,6 +1,6 @@
 var whirlydownload = "wdl.zip"
 var batdownload = "wdl.zip"
-var bothdownload = "both.zip"
+var bothdownload = "wbirdie-wbats.zip"
 
 
 var whirlydownloadcode = "?t4fasd4asd234f"
