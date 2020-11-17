@@ -3,9 +3,9 @@ var batdownload = "wdl.zip"
 var bothdownload = "both.zip"
 
 
-var whirlydownloadcode = "?3412341234"
-var batdownloadcode = "?99941234534"
-var bothdownloadcode = "?2342412341234"
+var whirlydownloadcode = "?t4fasd4asd234f"
+var batdownloadcode = "?fsdf5sadfa"
+var bothdownloadcode = "?bgrg4qdfdf50s"
 
 var cycleWhirlybats = ["A","B","Ç","D","E","F","G","H","I","J","K","L","M","N","O","P","Q","R","S","T","U","V","W","X","Y","Z","a","b","c","d","e","é","f","g","h","i","j","k","l","m","n","o","ó","ô","ö","ò","ō","ø","õ","p","ṕ","q","ʠ","ɋ","r","s","t","u","v","w","x","y","z","А","Б","В","Г","Д","Е","Ё","Ж","З","*","+","=","±","^","а","б","в","г","#","{","}","[","]","−","×","≤","∞","%","Α","Β","Γ","Δ","Ε","Ζ","Η","Θ","Ι","Κ","Λ","Μ","Ν","Ξ","Ο","Π","Ρ","Σ","Τ","Φ","Ω","Ͱ","Ϛ","Ϗ","ψ","0","1","2","3","4","5","6","7","8","9","⁄",".",",",":","?","/",")","-","¤","А"]
 
