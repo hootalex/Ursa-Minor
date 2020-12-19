@@ -1,7 +1,17 @@
+function getRandomArbitrary(min, max) {
+    return Math.random() * (max - min) + min;
+}
+
 $( "path, polygon, rect" ).click(function() {
   $( this ).addClass("explode")
 });
 
+
+          $(".typelink path, .typelink polygon, .typelink rect").each(function(i) {
+            var left = "px"
+            var top = "px"
+$(this).css({'transform' : 'translate(' + getRandomArbitrary(-5, 5)+"px" +', ' + getRandomArbitrary(-5, 5)+"px" + ')'});
+          });
 
 
  function highlight(click, mark, style) {
@@ -9,6 +19,8 @@ $( "path, polygon, rect" ).click(function() {
             var elm = $(this);
             setTimeout(function() {
               elm.toggleClass(style);
+              elm.css({'transform' : 'translate(' + 0 +', ' + 0 + ')'});
+
             }, i * Math.floor(Math.random() * 30) + 1  );
           });
           $(click).toggleClass(style);

@@ -2,11 +2,18 @@
   font-family: 'Nay Aug';
   src: url('https://cdn.glitch.com/0e606cea-0cd5-4750-9bbe-4b4e62e2e9fd%2FNayAug5-Regular.otf?v=1608399454756')  format('opentype');
 }
+
+
+a {
+  color: transparent;
+}
+
+
 body {
   font-family: "Nay Aug";
   margin: 2em;
   background-color: black;
-  margin-top: 100px;
+  margin-top: 25vh;
   text-align: center;
   cursor: crosshair;
 
@@ -39,8 +46,9 @@ fill: white;
 }
 
 .typelink {
-max-width: 500px;
-  fill: black;
+max-width: 20vw;
+  fill: transparent;
+  transition: .1s;
 }
 
 
@@ -51,7 +59,6 @@ max-width: 500px;
   right: 10px;
   border-radius: 20px;
 }
-
 
 /* #whirlybirdie {
   fill: #e10f60;
@@ -75,6 +82,8 @@ fill: #33cd00
 
 .red {
 fill: white;
+  transition: .7s;
+  transition-property: transform;
 }
 
 .typelink {
@@ -85,15 +94,14 @@ fill: white;
   border: 1px solid white;
 }
 
-@keyframes explode {
-  0%   { fill: black }
-  10%   { fill: white }
-  20%   { fill: black }
-  30%   { fill: white }
-  100%   { fill: black }
-}
-
 .explode {
   animation: explode 1s 1;
   animation-fill-mode: forwards;
+}
+
+
+@media screen and (max-width: 600px) {
+  .typelink {
+    max-width: 90%;
+  }
 }
