@@ -1,77 +1,24 @@
-$( ".toggledark" ).click(function() {
-  $("body").toggleClass("dark");
-
-if ($("body").hasClass("dark")) {
-
-    $(".toggledark").html("ó");
-    document.documentElement.style.setProperty('--type', 'white');
-  document.documentElement.style.setProperty('--bg', 'black');
-
-} else {
-
-  $(".toggledark").html("3");
-
-  document.documentElement.style.setProperty('--type', 'black');
-  document.documentElement.style.setProperty('--bg', 'white');
-}
-
-});
-
-function darkmode() {
-
-document.documentElement.style.setProperty('--type', randomColor());
-document.documentElement.style.setProperty('--bg', 'black');
-
-}
-
-function lightmode() {
-
-document.documentElement.style.setProperty('--type', randomColor({luminosity: 'dark'}));
-document.documentElement.style.setProperty('--bg', randomColor({luminosity: 'light'}));
-
-}
-
-
-
-$( ".togglerandom" ).click(function() {
-
-  if (Math.random()>.5) { darkmode()} else
-
-  {lightmode()}
-
-});
-
-$( ".toggleabout" ).click(function() {
-
-  $(".about").toggleClass("aboutshow")
-
-});
-
-$( ".x" ).click(function() {
-
-  $(".about").removeClass("aboutshow")
-
-});
-
-
-$( ".grinnell" ).keyup(function() {
-  if ($(this).html() == "BIRD LORE") {
-
-    $(".download").addClass("dlshow")
-
-  }
-
-
+$( "path, polygon, rect" ).click(function() {
+  $( this ).addClass("explode")
 });
 
 
 
+ function highlight(click, mark, style) {
+          $(mark).each(function(i) {
+            var elm = $(this);
+            setTimeout(function() {
+              elm.toggleClass(style);
+            }, i * Math.floor(Math.random() * 30) + 1  );
+          });
+          $(click).toggleClass(style);
+        }
 
-$( "#fatbear" ).on('mousemove touchmove change', function () {
+          highlight(this, ".typelink path, .typelink polygon, .typelink rect", "red");
 
-var slideval = $('#fatbear').val();
 
-console.log(slideval)
 
-$(".fatbear").css("font-variation-settings","'anim'" + slideval )
+$( ".typelink" ).mouseover(function() {
+  var desc = $( this ).attr("desc")
+  $(".info").html(desc)
 });

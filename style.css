@@ -1,333 +1,99 @@
 @font-face {
-  font-family: 'Whirlybats';
-  src: url('fonts/WhirlybatsGX.ttf')  format('truetype');
+  font-family: 'Nay Aug';
+  src: url('https://cdn.glitch.com/0e606cea-0cd5-4750-9bbe-4b4e62e2e9fd%2FNayAug5-Regular.otf?v=1608399454756')  format('opentype');
 }
-
-@font-face {
-  font-family: 'Nicholson';
-  src: url('https://cdn.glitch.com/79a216c0-5f48-407b-9d1e-af5b4d510daf%2FNicholsonGothic-Regular.otf?v=1600965303120')  format('opentype');
-}
-
-@font-face {
-  font-family: 'Fat Bear';
-  src: url('fonts/fatbear.ttf')  format('truetype');
-}
-
-@font-face {
-  font-family: 'Grinnell';
-  src: url('fonts/GrinnellR-Medium.otf')  format('opentype');
-}
-
-a {
-  text-decoration: none;
-  color: var(--type)
-}
-
-a:hover {
-opacity: .6;
-}
-
-.typetester:focus {
-    outline:none;
-}
-
-.typetester {
-text-align: center;
-margin: auto;
-}
-
-.grinnell {
-  font-size: 9vw;
-}
-
-#fatbear {
-  max-width: 300px;
-  white-space:nowrap;
-}
-
-@media screen and (max-width: 600px) {
-  .grinnell {
-font-size: 13.5vw;}
-}
-
-.nicholson {
-  font-size: 9vw;
-}
-
-@media screen and (max-width: 600px) {
-  .nicholson {
-font-size: 13.5vw;}
-}
-
-@media screen and (max-width: 600px) {
-  .fatbear {
-font-size: 50vw!important;}
-}
-
-@keyframes animate {
-  0%   { font-variation-settings: "anim" 100; }
-  100% { font-variation-settings: "anim" 200; }
-}
-
-.download{
-font-variation-settings: "anim" 100;
-  transition: .3s;
-  display: none;
-}
-
-.download:hover{
-font-variation-settings: "anim" 200;
-}
-
-.dlshow {
-display: block;
-}
-
-
-:root {
-    --type: black;
-    --bg: white;
-    --color: var(--type);
-}
-
 body {
-  font-family: "Nicholson", sans-serif;
-  font-size: 20px;
-  margin: 10px;
+  font-family: "Nay Aug";
+  margin: 2em;
+  background-color: black;
+  margin-top: 100px;
   text-align: center;
-  background-color: var(--bg);
-  color: var(--type);
-  -webkit-font-smoothing: antialiased;
+  cursor: crosshair;
+
+-webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 }
 
-.x {
-font-family: "Whirlybats";
-    font-size: 30px;
-    cursor: pointer;
-    position: absolute;
-    right: 9px;
-    top: 5px;
+h1 {
+  font-style: italic;
+  color: #373fff;
 }
 
-.light {
-    --type: black;
-    --bg: white;
-    --color: var(--type);
-}
-
-.about {
+.infobox {
+  color: white;
   position: fixed;
-  font-size: 50px;
-  padding: 30px;
-  background-color: var(--bg);
-  color: var(--type);
-  border: 1px solid var(--type);
-  z-index: 2;
-  left: 200px;
-  right: 200px;
-  top: 100px;
-  box-shadow: 10px 10px 0px 0px rgba(0,0,0,0.26);
-  opacity: 0;
-  pointer-events: none;
-  transform: scale(1,0);
-  transition: .3s;
-}
-
-.aboutshow {
-  opacity: 1;
-  pointer-events: all;
-  transform: scale(1,1);
-}
-
-.type svg {
-max-width: 900px;
-}
-
-.type {
-  margin: auto;
-  margin-top: 100px;
-  margin-bottom: 100px;
-  text-align: center;
-}
-
-p {
-margin: 0;
-}
-
-.desc {
-padding: 30px;
-max-width: 500px;
-  margin: auto;
+  top: 10px;
+  left: 10px;
+  font-size: 20px;
+  border: 1px solid white;
+  background-color: black;
+  padding: 5px;
 }
 
 #um {
-margin: 20px;
-}
-
-.navbar svg {
-width: 150px;
-  fill: var(--color)!important;
-}
-
-.navbar {
+max-width: 100px;
+fill: white;
   position: fixed;
-  top: 0;
-  left: 0;
+  top: 10px;
+  right: 10px;
 }
 
-.tr, .br, .bl {
-font-family: "Whirlybats";
-  font-size: 70px;
-position: fixed;
-      font-variation-settings: "anim" 100;
-  transition: .4s;
-  color: var(--color);user-select: none;
-}
-
-.tr {
-top: 0;
-right: 0;
-}
-
-.br {
-bottom: 0;
-right: 0;
-}
-
-.bl {
-bottom: 0;
-left: 0;
-}
-
-.tr:hover, .br:hover, .bl:hover {
-  font-variation-settings: "anim" 200;
-  cursor: pointer;
-
-}
-
-hr {
-border: 0;
-border-bottom: 1px solid var(--type);
-  margin-top: 20px;
-margin-bottom: 50px;
-}
-
-@media screen and (max-width: 600px) {
-  .navbar, .tr, .br, .bl {
-position: relative;
-    display: inline-block;
-    font-size: 30px;
-}
-   .tr, .br, .bl {
-transform: translateY(-25px)
+.typelink {
+max-width: 500px;
+  fill: black;
 }
 
 
-  .about {
-  position: fixed;
-  font-size: 30px;
-  left: 20px;
-  right: 20px;
-  top: 20px;
-}
-
-  .navbar svg {
-    width: 100px;
-    fill: var(--color)!important;
+.mail {
+  top: inherit;
+  left: inherit;
+  bottom: 10px;
+  right: 10px;
+  border-radius: 20px;
 }
 
 
+/* #whirlybirdie {
+  fill: #e10f60;
+
 }
+
+#nayaug {
+  fill: #f6d300;
+}
+
+#grinnell {
+fill: #b160ff;
+}
+
+#whirlybats {
+
+fill: #33cd00
+} */
 
 
 
-/* SLIDERS */
+.red {
+fill: white;
+}
 
-input[type=range] {
-  width: 100%;
-  margin: 9.75px 0;
-  background-color: transparent;
-  -webkit-appearance: none;
+.typelink {
+  border: 1px solid transparent;
 }
-input[type=range]:focus {
-  outline: none;
+
+.typelink:hover {
+  border: 1px solid white;
 }
-input[type=range]::-webkit-slider-runnable-track {
-  background: var(--type);
-  border: 0.2px solid var(--type);
-  border-radius: 1.3px;
-  width: 100%;
-  height: 4.5px;
-  cursor: pointer;
+
+@keyframes explode {
+  0%   { fill: black }
+  10%   { fill: white }
+  20%   { fill: black }
+  30%   { fill: white }
+  100%   { fill: black }
 }
-input[type=range]::-webkit-slider-thumb {
-  margin-top: -9.95px;
-  width: 21px;
-  height: 24px;
-  background: var(--type);
-  border: 1px solid var(--bg);
-  cursor: pointer;
-  -webkit-appearance: none;
-}
-input[type=range]:focus::-webkit-slider-runnable-track {
-  background: var(--type);
-}
-input[type=range]::-moz-range-track {
-  background: var(--type);
-  border: 0.2px solid var(--type);
-  border-radius: 1.3px;
-  width: 100%;
-  height: 4.5px;
-  cursor: pointer;
-}
-input[type=range]::-moz-range-thumb {
-  width: 21px;
-  height: 24px;
-  background: var(--type);
-  border: 1px solid var(--bg);
-  cursor: pointer;
-}
-input[type=range]::-ms-track {
-  background: transparent;
-  border-color: transparent;
-  border-width: 10.75px 0;
-  color: transparent;
-  width: 100%;
-  height: 4.5px;
-  cursor: pointer;
-}
-input[type=range]::-ms-fill-lower {
-  background: var(--type);
-  border: 0.2px solid var(--type);
-  border-radius: 2.6px;
-}
-input[type=range]::-ms-fill-upper {
-  background: var(--type);
-  border: 0.2px solid var(--type);
-  border-radius: 2.6px;
-}
-input[type=range]::-ms-thumb {
-  width: 21px;
-  height: 24px;
-  background: var(--type);
-  border: 1px solid var(--bg);
-  cursor: pointer;
-  margin-top: 0px;
-  /*Needed to keep the Edge thumb centred*/
-}
-input[type=range]:focus::-ms-fill-lower {
-  background: var(--type);
-}
-input[type=range]:focus::-ms-fill-upper {
-  background: var(--type);
-}
-/*TODO: Use one of the selectors from https://stackoverflow.com/a/20541859/7077589 and figure out
-how to remove the virtical space around the range input in IE*/
-@supports (-ms-ime-align:auto) {
-  /* Pre-Chromium Edge only styles, selector taken from hhttps://stackoverflow.com/a/32202953/7077589 */
-  input[type=range] {
-    margin: 0;
-    /*Edge starts the margin from the thumb, not the track as other browsers do*/
-  }
+
+.explode {
+  animation: explode 1s 1;
+  animation-fill-mode: forwards;
 }
