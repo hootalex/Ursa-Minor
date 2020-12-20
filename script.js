@@ -1,3 +1,5 @@
+var def= ":)"
+
 function getRandomArbitrary(min, max) {
     return Math.random() * (max - min) + min;
 }
@@ -34,3 +36,9 @@ $( ".typelink" ).mouseover(function() {
   var desc = $( this ).attr("desc")
   $(".info").html(desc)
 });
+
+$(".typelink").mouseout(function(){
+  $(".info").html(def)
+});
+
+$(".info").html(def)
