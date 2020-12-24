@@ -5,7 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="robots" content="noindex">
-    
+
     <title>Download Font Files</title>
 
     <!-- import the webpage's stylesheet -->
@@ -32,7 +32,11 @@
     </h1>
       </a>
 
+      <p class="mobileview" style="font-family: 'Nicholson Beta'; max-width: 500px; margin: auto">Hi mobile user! You can copy this url and send it to yourself if you can’t download on your phone. <span id="mob"></span></p>
+
+
 <p style="font-family: 'Nicholson Beta'; position: absolute; bottom: 10px; right: 20px;"><a href="mailto:1alextomlinson@gmail.com">Contact</a></p>
+
   </body>
   <style>
   @font-face{font-family:"Whirly Birdie";src:url("https://cdn.glitch.com/1711052e-ea5e-4036-9c61-dd3ef6782855%2FWhirlyBirdieGX.ttf?v=1607546326012")
@@ -47,6 +51,10 @@ html, body {
 -moz-osx-font-smoothing: grayscale;
 text-align: center;
     margin-top: 20vh;
+}
+
+.mobileview {
+  display: none;
 }
 
 
@@ -129,6 +137,28 @@ body {
   margin: 2em;
   background-color: var(--offwhite);
 }
+
+
+@media screen and (max-width: 600px) {
+
+.mobileview {
+  display: block;
+  /* background-color: #ffec0082; */
+}
+
+#mob {
+  display: block;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  overflow: scroll;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+}
+
+
   </style>
 
 
