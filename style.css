@@ -53,6 +53,7 @@ fill: white;
 max-width: 40vw;
   fill: transparent;
   transition: .1s;
+  border-radius: 20px;
 }
 
 
