@@ -1,112 +1,49 @@
 @font-face {
-  font-family: 'Nay Aug';
-  src: url('https://cdn.glitch.com/0e606cea-0cd5-4750-9bbe-4b4e62e2e9fd%2FNayAug5-Regular.otf?v=1608399454756')  format('opentype');
+    font-family: Nay Aug;
+    src: url("https://cdn.glitch.com/8ac6505e-e2f7-406c-95e2-0f8e1d8789ae%2FNayAug-Regular.otf?v=1623163602239") format("opentype");
 }
-
 
 a {
-  color: transparent;
+  color: white;
+  text-decoration: none;
+  border-bottom: 1px solid rgba(255,255,255,0.25);
 }
 
-
-body {
-  font-family: "Nay Aug";
-  margin: 2em;
+html, body {
+  font-family: Nay Aug;
   background-color: black;
-  margin-top: 25vh;
-  text-align: center;
-
--webkit-font-smoothing: antialiased;
+  color: white;
+  margin: 30px;
+  -webkit-font-smoothing: antialiased;
 -moz-osx-font-smoothing: grayscale;
 }
 
-h1 {
-  font-style: italic;
-  color: #373fff;
+h1, h2, h3 {
+  font-weight: normal;
+  font-size: 16px;
 }
 
-.infobox {
-  color: white;
-  position: fixed;
-  top: 10px;
-  right: 10px;
-  font-size: 18px;
-  border: 1px solid white;
-  background-color: black;
-  padding: 5px;
+h2 {
+  font-size: 30px;
+/*   text-transform: uppercase; */
 }
 
-.info {
-  background-color: white;
-  color: black;
+p {
+  max-width: 400px;
+  margin-bottom: 50px;
 }
 
-#um {
-max-width: 100px;
-fill: white;
-  position: fixed;
-  top: 10px;
-  left: 10px;
+hr {
+  border: 0;
+  border-bottom: 1px solid rgba(255,255,255,0.25);
 }
-
-.typelink {
-max-width: 40vw;
-  fill: transparent;
-  transition: .1s;
-  border-radius: 20px;
-}
-
-
-.mail {
-  top: inherit;
-  left: inherit;
-  bottom: 10px;
-  right: 10px;
-  border-radius: 20px;
-}
-
-/* #whirlybirdie {
-  fill: #e10f60;
-
-}
-
-#nayaug {
-  fill: #f6d300;
-}
-
-#grinnell {
-fill: #b160ff;
-}
-
-#whirlybats {
-
-fill: #33cd00
-} */
-
-
-
-.red {
-fill: white;
-  transition: .7s;
-  transition-property: transform;
-}
-
-.typelink {
-  border: 1px solid transparent;
-}
-
-.typelink:hover {
-  border: 1px solid rgba(255,255,255,0.4);
-}
-
-.explode {
-  animation: explode 1s 1;
-  animation-fill-mode: forwards;
-}
-
 
 @media screen and (max-width: 600px) {
-  .typelink {
-    max-width: 90%;
+  html, body {
+    margin: 10px;
+  }
+
+  h2 {
+    font-size: 19px;
   }
 }
