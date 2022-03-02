@@ -1,0 +1,134 @@
+@font-face {
+  font-family: "Nay Aug";
+  src: url("https://cdn.glitch.global/cedc551f-8766-4635-b71b-ca089ffe676c/NayAugp-Regular.ttf?v=1646230944800") format("truetype")
+}
+
+@font-face {
+  font-family: "Whimbrel Caps Color";
+  src: url("https://cdn.glitch.global/cedc551f-8766-4635-b71b-ca089ffe676c/WhimbrelCaps-ColorSVG.ttf?v=1646233085505") format("truetype")
+}
+
+html, body {
+font-family: "Nay Aug";
+-webkit-font-smoothing: antialiased;
+-moz-osx-font-smoothing: grayscale;
+text-align: center;
+    margin-top: 15vh;
+  font-size: 1.05rem;
+}
+
+.mobileview {
+  display: none;
+}
+
+
+:root {
+    --black: #000000;
+    --white: #ffffff;
+    --red: #e5332a;
+    --blue: #3789b0;
+    --sun: #fec031;
+    --forest: #464d33;
+    --green: #3789b0;
+    --medgreen: #47c981;
+    --lightgreen: #ccd9d1;
+    --orange: #ff8729;
+    --wood: #663d16;
+    --navy: #112b5a;
+    --lightnavy: #274a8c;
+    --offwhite: #fef3da;
+    --lightgrey: #d5d4d4;
+    --radius: 0;
+    --margin: 80px;
+    --rowGap: 0;
+    --colGap: 16px;
+    --padding: 50px;
+}
+
+h1 {
+font-family: "Nay Aug";
+  font-weight: normal;
+  font-size: 1.1rem;
+  background-color: var(--green);
+  color: white;
+  display: inline-block;
+  padding: 10px;
+  border-radius: 10px;
+  transition: .1s;
+  border: 1px solid var(--green);
+}
+
+    p {
+      max-width: 500px;
+      margin: auto;
+    }
+
+h1:hover {
+/* border: 1px solid var(--green); */
+  background-color: transparent;
+  color: var(--green);
+  cursor: pointer;
+}
+
+.wb-icon {
+font-family: "Whirlybats";
+  font-style: normal;
+  font-weight: normal;
+}
+
+.wbcontainer {
+font-family: "Whirlybats";
+  font-size: 90px;
+  font-style: normal;
+  font-weight: normal;
+  display: inline-block;
+  color: var(--blue);
+  margin-left: -25px;
+}
+
+.wcontainer {
+font-family: "Whimbrel Caps Color";
+font-size: 84px;
+  max-width: 100%;
+  word-break: break-all;
+    line-height: 1.1;
+
+}
+
+a {
+text-decoration: none;
+color: var(--blue);
+}
+
+body {
+  margin: 2em;
+  background-color: var(--offwhite);
+}
+
+
+@media screen and (max-width: 600px) {
+
+  html, body {
+    margin-top: 5vh;
+  }
+
+  .wcontainer {
+    font-size: 60px;
+  }
+
+.mobileview {
+  display: block;
+  /* background-color: #ffec0082; */
+}
+
+#mob {
+  display: block;
+  background-color: black;
+  color: white;
+  padding: 20px;
+  overflow: scroll;
+  margin-top: 10px;
+  border-radius: 10px;
+}
+
+}
