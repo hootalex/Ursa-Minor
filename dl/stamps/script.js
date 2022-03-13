@@ -1,4 +1,4 @@
-var whirlydownload = "wbirdie-1605638293.zip"
+var whirlydownload = "WhimbrelCaps1.zip"
 // var batdownload = "wbats-1605638302.zip"
 // var bothdownload = "wbirdiewbats-1605638280.zip"
 
