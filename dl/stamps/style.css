@@ -8,6 +8,11 @@
   src: url("https://cdn.glitch.global/cedc551f-8766-4635-b71b-ca089ffe676c/WhimbrelCaps-ColorSVG.ttf?v=1646233085505") format("truetype")
 }
 
+@font-face {
+  font-family: "Whimbrel Caps";
+  src: url("https://cdn.glitch.global/71a43c4d-fd84-4423-8d1a-54400c0c1032/WhimbrelCaps-Regular.ttf?v=1647821548636") format("truetype")
+}
+
 html, body {
 font-family: "Nay Aug";
 -webkit-font-smoothing: antialiased;
@@ -58,6 +63,10 @@ font-family: "Nay Aug";
   border: 1px solid var(--green);
 }
 
+h1:active {
+  transform: translateY(2px);
+}
+
     p {
       max-width: 500px;
       margin: auto;
@@ -86,13 +95,24 @@ font-family: "Whirlybats";
   margin-left: -25px;
 }
 
+[contenteditable] {
+  outline: 0px solid transparent;
+}
+
 .wcontainer {
 font-family: "Whimbrel Caps Color";
 font-size: 84px;
   max-width: 100%;
   word-break: break-all;
     line-height: 1.1;
+}
 
+.wcontainerbw {
+font-family: "Whimbrel Caps";
+font-size: 84px;
+  max-width: 100%;
+  word-break: break-all;
+    line-height: 1.1;
 }
 
 a {
@@ -112,7 +132,7 @@ body {
     margin-top: 5vh;
   }
 
-  .wcontainer {
+  .wcontainer, .wcontainerbw {
     font-size: 60px;
   }
 

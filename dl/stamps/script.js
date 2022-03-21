@@ -38,9 +38,9 @@ function myFunctionii() {
   });
 }
 
-myFunction();
-
-myFunctionii();
+// myFunction();
+//
+// myFunctionii();
 
 
 
